@@ -10,7 +10,22 @@ SIMD, on the other hand, uses less memory because it only keeps one copy of the 
 In contrast to MIMD, which requires one decoder for each processing element, SIMD has lower costs since there is less demand for devices like decoders.
 When compared to SIMD, MIMD is both more efficient and complicated.
 
-2. Illustrate and explain what a Von Neuman Architecture is.
+2. What are the performance metrics of parallel systems? Explain each.
+Execution Time - The amount of time the system spends carrying out a specific job, including time spent carrying out run-time or system functions on its behalf,
+is referred to as the task's execution time. Implementation defines the method for measuring execution time. 
+Which job, if any, is charged with the execution time used by interrupt handlers and run-time services on the system's behalf depends on the implementation.
+Total Parallel Overhead - The biggest source of parallel processing overhead is often the time needed to communicate data between processor units. 
+A parallel system's processing components may become idle for a variety of reasons, including load imbalance, synchronization,
+and the inclusion of serial components in a program.
+Speedup - A parallel algorithm's speedup is measured as the difference between the time needed to solve a problem using the best sequential
+approach and the time needed to do so using a parallel algorithm employing p processors.
+Efficiency - The speedup factor to processor count ratio determines a program's parallel efficiency. 
+These numbers can be used to determine how much of the computational power is actually being utilized when doing a calculation.
+
+3. How does the performance of metrics of parallel systems affect each
+other? Explain. 
+
+4. Illustrate and explain what a Von Neuman Architecture is.
 Many general purpose computers are built using the Von Neumann architecture. 
 The fundamental components of von Neumann architecture are binary digits, which are used to store both data and instructions.
 Primary storage is used to store both data and instructions.
@@ -20,7 +35,7 @@ Five unique registers are used by a processor built on the Von Neumann architect
 The memory address of the subsequent instruction that has to be retrieved from primary storage is stored in the program counter (PC). 
 The arithmetic logic unit (ALU) uses the accumulator (ACC), a special-purpose register, to store the data being processed and the results of operations.
 
-3. Explain what pipelining is.
+5. Explain what pipelining is.
 Gathering instructions from the processor and passing them through a pipeline is known as pipelinelining.
 It permits the systematic storage and carrying out of instructions. As pipeline processing, it also goes by that name.
 Multiple instructions are overlapped during execution using a method called "pipelining." 
