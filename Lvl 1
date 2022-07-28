@@ -23,7 +23,11 @@ Efficiency - The speedup factor to processor count ratio determines a program's 
 These numbers can be used to determine how much of the computational power is actually being utilized when doing a calculation.
 
 3. How does the performance of metrics of parallel systems affect each
-other? Explain. 
+other? Explain.
+By contrasting the performance of the system to that of the system, 
+the impact of parallelism on the performance of parallel processing systems is investigated. 
+The performance boost that comes from breaking work down into tasks is observed to diminish with more utilization. 
+For a fixed set of processors, we see that the mean job response time of the system grows with more parallelism as the number of tasks per job increases.
 
 4. Illustrate and explain what a Von Neuman Architecture is.
 Many general purpose computers are built using the Von Neumann architecture. 
