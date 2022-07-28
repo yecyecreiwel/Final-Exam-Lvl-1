@@ -4,3 +4,26 @@ The shared memory unit is divided into modules so that it can interact with all 
 While Computers with numerous processor units, instruction streams, and data streams are known as MIMD (Multiple Instruction Multiple Data Stream) systems. 
 Although MIMD machines have the most complicated setup, they also guarantee efficiency. Synchronous processing, or SIMD, operates each processing component through a separate program. However, MIMD included an asynchronous system to operate processing components via the various communication programs. 
 The software is stored individually by each processing element in MIMD, increasing the amount of memory needed. SIMD, on the other hand, uses less memory because it only keeps one copy of the program. In contrast to MIMD, which requires one decoder for each processing element, SIMD has lower costs since there is less demand for devices like decoders. When compared to SIMD, MIMD is both more efficient and complicated.
+
+2. Illustrate and explain what a Von Neuman Architecture is.
+Many general purpose computers are built using the Von Neumann architecture. 
+The fundamental components of von Neumann architecture are binary digits, which are used to store both data and instructions.
+Primary storage is used to store both data and instructions.
+Until no more instructions are available, instructions are read one at a time and sequentially from memory. 
+The processor decodes and executes each instruction before returning to fetch the next one. 
+Five unique registers are used by a processor built on the Von Neumann architecture to handle data. 
+The memory address of the subsequent instruction that has to be retrieved from primary storage is stored in the program counter (PC). 
+The address of the current instruction is kept in the memory address register (MAR), which is the address in memory to which data is to be transferred, 
+or data that is to be fetched from memory, the memory data register (MDR) holds the contents found at the address held in the MAR, or data that is to be transferred to primary storage, 
+the current instruction register (CIR) holds the instruction that is currently being decoded and executed.
+The arithmetic logic unit (ALU) uses the accumulator (ACC), a special-purpose register, to store the data being processed and the results of operations.
+
+3. Explain what pipelining is.
+Gathering instructions from the processor and passing them through a pipeline is known as pipelinelining.
+It permits the systematic storage and carrying out of instructions. As pipeline processing, it also goes by that name.
+Multiple instructions are overlapped during execution using a method called "pipelining." 
+To create a structure that resembles a pipe, the pipeline is separated into stages and connected to one another.
+Both ends of the instructions are used for entry and exit. Throughput for all instructions is increased via pipelining.
+The input register is followed by a combinational circuit in a pipeline system's each segment. 
+Data is stored in the register, which is used by the combinational circuit for processing. 
+The input register of the subsequent segment receives the output of the combinational circuit.
