@@ -1,0 +1,6 @@
+1. Differentiate between SIMD and MIMD? Explain.
+SIMD stands for Single Instruction Multiple Data Streams in this architecture, a single instruction is applied to a group of the data stream or distinct data at the same time. SIMD assists vector processing where a single control unit provides guidance for functioning over all of the execution units. 
+The shared memory unit is divided into modules so that it can interact with all the processors simultaneously. 
+While Computers with numerous processor units, instruction streams, and data streams are known as MIMD (Multiple Instruction Multiple Data Stream) systems. 
+Although MIMD machines have the most complicated setup, they also guarantee efficiency. Synchronous processing, or SIMD, operates each processing component through a separate program. However, MIMD included an asynchronous system to operate processing components via the various communication programs. 
+The software is stored individually by each processing element in MIMD, increasing the amount of memory needed. SIMD, on the other hand, uses less memory because it only keeps one copy of the program. In contrast to MIMD, which requires one decoder for each processing element, SIMD has lower costs since there is less demand for devices like decoders. When compared to SIMD, MIMD is both more efficient and complicated.
