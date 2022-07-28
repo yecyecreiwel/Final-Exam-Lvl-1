@@ -3,8 +3,7 @@ SIMD stands for Single Instruction Multiple Data Streams in this architecture, a
 SIMD assists vector processing where a single control unit provides guidance for functioning over all of the execution units. 
 The shared memory unit is divided into modules so that it can interact with all the processors simultaneously. 
 While Computers with numerous processor units, instruction streams, and data streams are known as MIMD (Multiple Instruction Multiple Data Stream) systems. 
-Although MIMD machines have the most complicated setup, they also guarantee efficiency. 
-Synchronous processing, or SIMD, operates each processing component through a separate program. 
+Although MIMD machines have the most complicated setup, they also guarantee efficiency.
 However, MIMD included an asynchronous system to operate processing components via the various communication programs. 
 The software is stored individually by each processing element in MIMD, increasing the amount of memory needed.
 SIMD, on the other hand, uses less memory because it only keeps one copy of the program.
@@ -19,9 +18,6 @@ Until no more instructions are available, instructions are read one at a time an
 The processor decodes and executes each instruction before returning to fetch the next one. 
 Five unique registers are used by a processor built on the Von Neumann architecture to handle data. 
 The memory address of the subsequent instruction that has to be retrieved from primary storage is stored in the program counter (PC). 
-The address of the current instruction is kept in the memory address register (MAR), which is the address in memory to which data is to be transferred, 
-or data that is to be fetched from memory, the memory data register (MDR) holds the contents found at the address held in the MAR, or data that is to be transferred to primary storage, 
-the current instruction register (CIR) holds the instruction that is currently being decoded and executed.
 The arithmetic logic unit (ALU) uses the accumulator (ACC), a special-purpose register, to store the data being processed and the results of operations.
 
 3. Explain what pipelining is.
